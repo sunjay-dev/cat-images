@@ -28,5 +28,8 @@ has();
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  while(cat_container.firstChild){
+  cat_container.removeChild(cat_container.firstChild);
+  }
   has();
 }
