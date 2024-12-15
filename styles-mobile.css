@@ -1,0 +1,158 @@
+/* styles-mobile.css */
+
+body {
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
+  .cat-container {
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cat-card {
+    width: calc(50% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .cat-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .cat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s;
+  }
+  
+  .cat-card:hover .cat-image {
+    transform: scale(1.2);
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* Tablet styles */
+    .cat-card {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* Desktop styles */
+    .cat-card {
+      width: calc(25% - 20px);
+    }
+
+    .fixed-div {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, transform 0.3s;
+        background-image: url('1.png'); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        width: 25px;
+        height: 25px;
+      }
+      
+      .fixed-div:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+      }
+      .ribbon {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        z-index: 1000; /* Ensure it's above other elements */
+      }
+    
+      .ribbon-image {
+        width: 199px;
+        height: auto;
+        margin-right: 0px;
+        rotate: 322deg;
+        margin: 8px;
+        margin-left: -44px;
+    }
+    
+      .ribbon-text {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        rotate: 318deg;
+        margin: -194px;
+        margin-left: -179px;
+        margin-top: -216px;
+    }
+    
+  }
+  
+/* Additional styles for the fixed div on mobile */
+@media only screen and (max-width: 767px) {
+    .fixed-div {
+      position: fixed;
+      bottom: 25px;
+      right: 18px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+      background-image: url('1.png'); /* Replace with the path to your image */
+      background-size: cover;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+    }
+
+    .ribbon {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        z-index: 1000; /* Ensure it's above other elements */
+      }
+    
+      .ribbon-image {
+        width: 126px;
+        height: auto;
+        margin-right: 0px;
+        rotate: 328deg;
+        margin: -3px;
+        margin-left: -32px;
+    }
+    
+      .ribbon-text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        rotate: 325deg;
+        margin: -103px;
+        margin-left: -103px;
+        margin-top: -111px;
+    }
+    
+  }
+  
+
+  
