@@ -8,22 +8,20 @@ function has() {
       'X-RapidAPI-Host': 'cat14.p.rapidapi.com'
     }
   }).then(response => response.json())
-  .then(data => showImage(data))
+  .then(data =>{
+    data.map((data) =>{ 
+      let div = document.createElement('div');
+      div.className = 'cat-card';
+    
+      let img = document.createElement('img');
+      img .className= "cat-image";
+      img.src=`${data.url}`;
+    
+      div.appendChild(img);
+      cat_container.appendChild(div);
+    }) 
+  })
   .catch(error => console.log(error))
-}
-function showImage(data){
-
-  data.map((data) =>{ 
-  let div = document.createElement('div');
-  div.className = 'cat-card';
-
-  let img = document.createElement('img');
-  img .className= "cat-image";
-  img.src=`${data.url}`;
-
-  div.appendChild(img);
-  cat_container.appendChild(div);
-})  
 }
 
 has();
@@ -32,4 +30,3 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   has();
 }
-
