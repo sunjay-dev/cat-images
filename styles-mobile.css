@@ -62,7 +62,7 @@ body {
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s, transform 0.3s;
-        background-image: url('refresh.png'); /* Replace with the path to your image */
+        background-image: url('./images/refresh.png'); /* Replace with the path to your image */
         background-size: cover;
         background-position: center;
         width: 25px;
@@ -117,7 +117,7 @@ body {
       cursor: pointer;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s, transform 0.3s;
-      background-image: url('refresh.png'); /* Replace with the path to your image */
+      background-image: url('./images/refresh.png'); /* Replace with the path to your image */
       background-size: cover;
       background-position: center;
       width: 30px;
